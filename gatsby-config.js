@@ -6,5 +6,30 @@
 
 module.exports = {
   /* Your site config here */
-  plugins: [],
+  plugins: [
+    "gatsby-transformer-remark",
+    "gatsby-plugin-image",
+    "gatsby-plugin-sharp",
+    "gatsby-transformer-sharp",
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `projects`,
+        path: `${__dirname}/src/projects/`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `${__dirname}/src/images/`,
+      },
+    },
+  ],
+  siteMetadata: {
+    title: "Agatha Ambrose",
+    description: "UX-centered Frontend Developer based in Africa.",
+    copyright: "This website is a copyright of Agatha Ambrose 2021",
+    contact: "agathambrose@gmail.com",
+  },
 }

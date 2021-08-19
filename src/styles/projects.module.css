@@ -1,0 +1,43 @@
+.portfolio {
+  text-align: center;
+}
+.portfolio > h2 {
+  font-size: 3em;
+  margin-top: 80px;
+}
+.portfolio > h3 {
+  font-size: 2em;
+  font-weight: 400;
+}
+.projectStyle {
+  /* display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 80px;
+  margin: 80px 20px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 180px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  padding: 10px;
+}
+
+.projectStyle a {
+  margin-bottom: 20px;
+}
+
+.projectStyle a :hover{
+ color: rgb(255, 0, 106);
+}
+
+.projectStyle h3 {
+  text-align: center;
+  margin: 20px auto 0px;
+  font-weight: 500;
+}
+.projectStyle p {
+  color: #fff;
+  margin-top: 4px;
+}
+
